@@ -1,0 +1,21 @@
+name: Warper
+version: '${project.version}'
+main: me.wyvern.warper.warper.Warper
+api-version: 1.18
+authors: [ Wyvern ]
+description: A warping plugin
+permissions:
+  warper.get:
+    default: op
+    description: the permission for /get
+  warper.setWarp:
+    default: op
+    description: permission for /setwarp
+
+commands:
+  get:
+    permissions: warper.get
+  setwarp:
+    permissions: warper.setWarp
+
+
